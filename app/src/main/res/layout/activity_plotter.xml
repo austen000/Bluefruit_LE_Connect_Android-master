@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/chart_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:text="@string/back_to_main" />
+
+    <Button
+        android:id="@+id/buttonStopRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-5dp"
+        android:text="@string/stop_run" />
+
+
+    <Button
+        android:id="@+id/buttonRecordMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/buttonBackToMain" />
+
+    <com.scichart.charting.visuals.SciChartSurface
+        android:id="@+id/chartView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonBackToMain"
+        android:layout_marginTop="-5dp" />
+
+    <EditText
+        android:id="@+id/editMarkText"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/buttonRecordMode"
+        android:layout_toStartOf="@+id/buttonMarkData"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:paddingStart="10dp"
+        android:background="#555555"
+        android:bufferType="editable"
+        android:ems="10"
+        android:imeOptions="flagNoFullscreen"
+        android:inputType="text"
+        android:text="Label1"
+        android:textColor="#999999"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/buttonMarkData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonStopRun"
+        android:text="Mark" />
+
+</RelativeLayout>

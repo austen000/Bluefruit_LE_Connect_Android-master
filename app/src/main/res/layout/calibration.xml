@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto-Calibrating.."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <!--
+           ProgressBar
+               Visual indicator of progress in some operation. Displays a bar to the user
+               representing how far the operation has progressed; the application can change
+               the amount of progress (modifying the length of the bar) as it moves forward.
+       -->
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:indeterminate="true"
+        android:visibility="visible" />
+
+</LinearLayout>

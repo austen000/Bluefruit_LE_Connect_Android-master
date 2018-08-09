@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+BuildConfig.java
+R.java
+dFULibrary/build
+app-release.apk
+manifest-merger-release-report.txt
+app/release
